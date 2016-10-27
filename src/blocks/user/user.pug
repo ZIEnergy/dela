@@ -1,0 +1,11 @@
+mixin user(additionalClass)
+  .user(class=additionalClass)
+    .user__logged-out
+      .user__logged-out-icon
+      a.user__logged-out-link(href="#") Вход
+      a.user__logged-out-link(href="#") Регистрация
+    .user__logged-in
+      img.user__picture(src="img/user-small.png", alt="User")
+      .user__logged-in-link Мой кабинет
+      .user__logged-in-number 12
+      

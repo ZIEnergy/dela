@@ -1,0 +1,8 @@
+mixin header(additionalClass)
+  .header(class=additionalClass)
+    .wrapper.header__wrapper
+      +logo
+      .header__center
+        +add-task
+        +menu('header__menu')
+      +user
