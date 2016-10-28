@@ -1,3 +1,66 @@
 .categories-front {
   
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__item {
+    text-align: center;
+    
+    &:nth-child(n+2) {
+      margin-left: 54px;
+    }
+  }
+  
+  &__item-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 17px;
+    
+    &--courier {
+      background: url(../img/category-courier.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--cleaning {
+      background: url(../img/category-cleaning.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--repairs {
+      background: url(../img/category-repairs.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  &__item-title {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 18px;
+  }
+  
+  &__links-container {
+    margin-top: 10px;
+  }
+  
+  &__link {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #222;
+    font-family: @font-primary;
+  }
+  
+  &__more {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 34px;
+    color: @link-color;
+    font-size: 18px;
+    font-family: @font-primary;
+    text-decoration: underline;
+  }
 }

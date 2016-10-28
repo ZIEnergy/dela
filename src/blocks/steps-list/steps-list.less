@@ -1,0 +1,49 @@
+.steps-list {
+  display: flex;
+  justify-content: center;
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 255px;
+  }
+  
+  &__item-icon {
+    width: 198px;
+    height: 198px;
+    margin-bottom: 29px;
+    
+    &--task {
+      background: url(../img/step-task.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--offer {
+      background: url(../img/step-offer.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--choice {
+      background: url(../img/step-choice.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  &__item-header {
+    color: #083552;
+    font-family: @font-primary;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 23px;
+  }
+  
+  &__item-text {
+    color: #083552;
+    font-family: @font-primary;
+    font-size: 16px;
+    text-align: center;
+    line-height: 23px;
+  }
+}

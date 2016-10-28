@@ -1,3 +1,39 @@
 .live {
+  position: relative;
+  justify-content: flex-start;
+  padding-top: 97px;
   
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/live-clouds.png) no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  &__map-content {
+    width: 100%;
+    height: 100%;
+  }
 }

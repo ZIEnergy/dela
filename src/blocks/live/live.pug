@@ -1,2 +1,8 @@
 mixin live(additionalClass)
-  .live(class=additionalClass)
+  .live.section(class=additionalClass)
+    .live__map
+      iframe.live__map-content(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36614.18319829648!2d82.90588304125009!3d55.00139061139102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5e190cc4d97%3A0x9b3a0673e1d3e985!2z0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sby!4v1477690162990', frameborder='0', style='border:0', allowfullscreen='')
+    .live__content
+      .header-common
+        h2.header-common__title Прямая трансляция работы сервиса
+      +scroll-arrow('Больше возможностей')

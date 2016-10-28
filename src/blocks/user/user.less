@@ -1,19 +1,39 @@
 .user {
   
   &__logged-out {
-    
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
   }
   
-  &__logged-put-icon {
-    
+  &__logged-out-icon {
+    background: url(../img/lock-icon.svg) no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 18px;
+    margin-right: 9px;
   }
   
   &__logged-out-link {
+    color: #fff;
+    font-family: @font-primary;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid #8ab3d8;
+    .transition;
     
+    &:hover {
+      color: #cee5ff;
+      border-color: transparent;
+    }
+    
+    &:nth-child(n+2) {
+      margin-left: 9px;
+    }
   }
   
   &__logged-in {
-    
+    display: none;
   }
   
   &__picture {

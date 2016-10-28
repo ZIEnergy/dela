@@ -1,2 +1,12 @@
 mixin front(additionalClass)
-  .front(class=additionalClass)
+  .front.section(class=additionalClass)
+    .front__city.front__city--left
+    .front__city.front__city--right
+    .front__content
+      .header-common
+        h2.header-common__title Удобный способ заказать любую услугу
+        p.header-common__comment Поможем найти надежного исполнителя для решения ваших задач
+      +categories-front('front__categories-front')
+      a.button.front__button(href="#") Разместите задание — это бесплатно!
+      a.front__executor-link(href="#") Или стать исполнителем и заработать денег
+      +scroll-arrow('Как работает сервис')

@@ -1,0 +1,52 @@
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    
+    &:nth-child(n+2) {
+      margin-top: 60px;
+    }
+  }
+  
+  &__item-icon {
+    width: 90px;
+    margin-right: 32px;
+    height: 131px;
+    
+    &--price {
+      background: url(../img/advantage-price.png) no-repeat center;
+    }
+    
+    &--executors {
+      background: url(../img/advantage-executors.png) no-repeat center;
+    }
+    
+    &--time {
+      background: url(../img/advantage-time.svg) no-repeat center;
+    }
+  }
+  
+  &__item-content {
+    max-width: 660px;
+  }
+  
+  &__item-header {
+    color: #fff;
+    font-family: @font-primary;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  &__item-text {
+    color: #fff;
+    font-family: @font-primary;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}
