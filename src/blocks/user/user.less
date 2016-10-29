@@ -4,6 +4,7 @@
     margin-top: 1px;
     display: flex;
     align-items: center;
+    display: none;
   }
   
   &__logged-out-icon {
@@ -33,7 +34,8 @@
   }
   
   &__logged-in {
-    display: none;
+    display: flex;
+    align-items: center;
   }
   
   &__picture {
@@ -41,10 +43,23 @@
   }
   
   &__logged-in-link {
-    
+    margin: 0 8px 0 14px;
+    color: #fff;
+    font-family: @font-primary;
+    font-size: 16px;
   }
   
   &__logged-in-number {
-    
+    background-color: #414042;
+    background-image: linear-gradient(to top, #5cbf6c 0%, #5cbf6c 0%, #85de85 100%);
+    border-radius: 9px;
+    color: #153f78;
+    font-family: @font-primary;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    width: 30px;
+    height: 18px;
   }
 }
