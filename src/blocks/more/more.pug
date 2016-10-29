@@ -1,2 +1,10 @@
 mixin more(additionalClass)
-  .more(class=additionalClass)
+  .more.section(class=additionalClass)
+    .header-common.header-common--white
+      h2.header-common__title Узнайте больше
+    .more__question
+      .more__question-header Если вы хотите узнать больше о работе сервиса
+      a.more__question-link(href="#") Задайте вопрос
+    a.button.button--white.more__task(href="#") Разместите задание — это бесплатно!
+    a.more__executor(href="#") Или станьте исполнителем
+    +footer

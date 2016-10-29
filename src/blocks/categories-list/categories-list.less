@@ -1,3 +1,88 @@
 .categories-list {
   
+  
+  &__item-row {
+    display: flex;
+    
+    &:nth-child(n+2) {
+      margin-top: 20px;
+    }
+  }
+  
+  &__item {
+    width: 25%;
+    padding: 18px 0 35px 50px;
+  }
+  
+  &__item-icon {
+    
+    &--computer {
+      background: url(../img/category-computer-small.svg) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 15px;
+    }
+    
+    &--truck {
+      background: url(../img/category-truck-small.svg) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 14px;
+    }
+    
+    &--lawyers {
+      background: url(../img/category-lawyers-small.png) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 17px;
+    }
+    
+    &--repairs {
+      background: url(../img/category-repairs-small.svg) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 16px;
+    }
+    
+    &--web {
+      background: url(../img/category-web-small.svg) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 13px;
+    }
+    
+    &--design {
+      background: url(../img/category-design-small.svg) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 15px;
+    }
+    
+    &--photo {
+      background: url(../img/category-photo-small.svg) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 14px;
+    }
+    
+    &--cleaning {
+      background: url(../img/category-cleaning-small.png) no-repeat;
+      background-size: cover;
+      width: 13px;
+      height: 16px;
+    }
+  }
+  
+  &__item-list {
+    margin-top: 10px;
+  }
+  
+  &__item-link {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: underline;
+    display: block;
+  }
 }

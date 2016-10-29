@@ -1,3 +1,31 @@
 .socials {
+  display: flex;
   
+  &__item {
+    
+    &:nth-child(n+2) {
+      margin-left: 23px;
+    }
+    
+    &--vk {
+      width: 19px;
+      height: 11px;
+      background: url(../img/icon-vk.svg) no-repeat;
+      background-size: cover;
+    }
+    
+    &--twitter {
+      width: 20px;
+      height: 17px;
+      background: url(../img/icon-twitter.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--fb {
+      width: 8px;
+      height: 17px;
+      background: url(../img/icon-fb.png) no-repeat;
+      background-size: cover;
+    }
+  }
 }
