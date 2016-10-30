@@ -2,3 +2,18 @@ mixin checkbox-item(id, label, additionalClass)
   .checkbox-item(class=additionalClass)
     +checkbox(id)
     label.checkbox-item__label(for=id) #{label}
+    
+    
+mixin checkbox-item-documents(id, label, link, additionalClass)
+  .checkbox-item(class=additionalClass)
+    +checkbox(id)
+    label.checkbox-item__label(for=id) #{label}
+      a.checkbox-item__label-link(href="#")
+      a.checkbox-item__info(href="#")
+    
+    
+mixin checkbox-item-info(id, label, additionalClass)
+  .checkbox-item(class=additionalClass)
+    +checkbox(id)
+    label.checkbox-item__label(for=id) #{label}
+      a.checkbox-item__info(href="#")
