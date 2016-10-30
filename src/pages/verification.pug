@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    +header
+    .verification
+      .wrapper.verification__wrapper
+        .header-common
+          h1.header-common__title Верификация
+        a.verification__link-back(href="#") ← Перейти на главную
+        .verification__comment Выполнять задания могут только пользователи, которые прошли процедуру верификации. Данная процедура бесплатная, занимает 10–15 минут и состоит из 4 шагов: заполнение личных данных, указания доверенных лиц, выбора интересных вам категорий и прохождение теста на 
+          a.verification__comment-link(href="#") знание механики работы сервиса.
+        form.verification__form(action="#" method="post")
+          .verification__design
+            .verification__design-frame-top
+            .verification__design-frame-bottom
+            .verification__design-frame-left
+            .verification__design-frame-right
+            .verification__design-bg
+          .verification__form-content
+            .verification__form-item
+              h2.verification__form-header 1. Как устроен сервис?
+              +checkbox-item('organization-1', 'Заказчик создает задание, исполнители оставляют к нему предложения (предложения - платные, сумма списывается автоматически), в которых указаны их номера телефонов. Заказчик выходит на связь с понравившимся кандидатом, выбирает его исполнителем своего заказа.')
+              +checkbox-item('organization-2', 'Заказчик создает задание, исполнители уточняют телефон заказчика в комментариях и далее созваниваются, чтобы договориться об условиях.')
+              +checkbox-item('organization-3', 'Заказчик создает задание, исполнители сразу видят его телефон и могут созвониться для уточнения условий.')
+            .verification__form-item
+              h2.verification__form-header.verification__form-header--error 2. Как подписаться на уведомления о новых заданиях?
+              .verification__form-error Вы дали неверный ответ. 
+                a.verification__form-error-link(href="#") Узнать правильный ответ
+              +checkbox-item('notifications-1', 'Написать в тех.поддержку с просьбой подключить уведомления в нужной категории.')
+              +checkbox-item('notifications-2', 'Подписки нет. Нужно следить за появлением новых заданий, обновляя сайт.')
+              +checkbox-item('notifications-3', 'Зайти в настройки уведомлений в профиле и выбрать категории, уведомления об обновлении которых хотите получать по e-mail.')
+            .verification__form-item
+              h2.verification__form-header 3. Что исполнителю запрещено указывать в описании своего профиля?
+              +checkbox-item('ban-1', 'Любые контактные данные: телефон, электронная почта, ссылки на персональный сайт, социальные сети, мессенджеры (Skype, ICQ и т. д.).')
+              +checkbox-item('ban-2', 'Интересы, образование и профессиональные навыки.')
+              +checkbox-item('ban-3', 'Дату рождения.')
+            .verification__form-item
+              h2.verification__form-header 4. Как оставить предложение к заданию, которое вы хотели бы выполнить?
+              +checkbox-item('offer-1', 'Написать в комментариях к заданию, что готов выполнить поручение и оставить свои контактные данные.')
+              +checkbox-item('offer-2', 'Внимательно прочитать условия задания и уточнить необходимые вопросы в комментариях. Убедиться, что на счету достаточно средств для публикации своего предложения. Нажать кнопку в задании “Добавить предложение” и подробно описать суть своего предложения')
+              +checkbox-item('offer-3', 'Написать заказчику личное сообщение на сайте и предложить сотрудничество.')
+            button.button.verification__button Завершить тестирование
+        +form-progress('verification__form-progress')
+    +footer
+    include ../templates/scripts.pug

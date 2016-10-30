@@ -1,0 +1,146 @@
+.verification {
+  margin-top: 75px;
+  
+  &__wrapper {
+    width: 1170px;
+  }
+  
+  &__link-back {
+    color: #222;
+    font-size: 16px;
+    font-family: @font-primary;
+    text-align: center;
+    display: block;
+    margin: 15px 0 40px;
+  }
+  
+  &__comment {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  &__comment-link {
+    color: #222;
+  }
+  
+  &__form {
+   margin-top: 50px;
+   margin-bottom: 43px;
+   padding: 65px 75px 84px;
+   position: relative;
+  }
+  
+  &__form-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  &__form-item {
+    
+    &:nth-child(n+2) {
+      margin-top: 60px;
+    }
+  }
+  
+  &__form-header {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+    &--error {
+      color: #de1717;
+      margin-bottom: 5px;
+    }
+  }
+  
+  &__form-error {
+    color: #de1717;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: @font-primary;
+    margin-left: 29px;
+  }
+  
+  &__form-error-link {
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: @font-primary;
+    font-weight: 400;
+  }
+  
+  &__button {
+    width: 364px;
+    height: 60px;
+    background: #fff;
+    border: 3px solid #4099e9;
+    border-radius: 29px;
+    font-size: 26px;
+    margin: 70px auto 0;
+  }
+  
+  &__form-progress {
+    margin-bottom: 53px;
+  }
+  
+  &__design {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  &__design-frame-top {
+    background: #fff url(../img/frame.png) no-repeat;
+    background-size: 1170px 177px;
+    width: 1170px;
+    height: 177px;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  &__design-frame-bottom {
+    background: #fff url(../img/frame.png) no-repeat;
+    background-size: 1170px 177px;
+    width: 1170px;
+    height: 177px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  &__design-frame-left {
+    background: url(../img/frame-side.png) repeat-y;
+    width: 27px;
+    height: 100%;
+    top: 177px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  &__design-frame-right {
+    background: url(../img/frame-side.png) repeat-y;
+    width: 27px;
+    height: 100%;
+    top: 177px;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(180deg);
+  }
+  
+  &__design-bg {
+    
+  }
+}

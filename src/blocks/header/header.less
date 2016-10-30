@@ -1,10 +1,6 @@
 .header {
   background: @color-primary;
-  z-index: 3;
-  top: 0;
-  left: 0;
   width: 100%;
-  position: absolute;
   
   &__wrapper {
     display: flex;
@@ -20,5 +16,12 @@
   
   &__menu {
     margin-left: 18px;
+  }
+  
+  &--main {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
   }
 }
