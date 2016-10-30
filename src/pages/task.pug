@@ -87,11 +87,10 @@ html(lang='en')
           .form__error-message Не все поля заполнены! Проверьте правильность введенных данных
           button.button.form__button Опубликовать задание
         .form__sidebar
-          .form__sidebar-content
-            h2.form__sidebar-header Частые вопросы
-            .form__sidebar-list
-              a.form__sidebar-link Сколько предложений я получу?
-              a.form__sidebar-link Обязательно выбирать исполнителя?
-              a.form__sidebar-link Зачем мне указывать примерный бюджет задания
+          h2.form__sidebar-header Частые вопросы
+          .form__sidebar-list
+            a.form__sidebar-link(href="#") Сколько предложений я получу?
+            a.form__sidebar-link(href="#") Обязательно выбирать исполнителя?
+            a.form__sidebar-link(href="#") Зачем мне указывать примерный бюджет задания
     +footer
     include ../templates/scripts.pug

@@ -1,4 +1,5 @@
 .form {
+  display: flex;
   
   &__content {
     
@@ -146,22 +147,43 @@
   }
   
   &__sidebar {
-    
-  }
-  
-  &__sidebar-content {
-    
+    width: 37.54%;
+    padding: 44px 55px 50px 63px;
+    background: #f1f1f1;
+    border-radius: 0 10px 10px 0;
   }
   
   &__sidebar-header {
-    
+    color: #022222;
+    font-family: @font-primary;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    left: -3px;
+    height: 80px;
+    padding-top: 15px;
+    background: url(../img/message-cloud-grey.svg) no-repeat 32px;
+    background-size: 85px 80px;
   }
   
   &__sidebar-list {
-    
+    margin-top: 35px;
   }
   
   &__sidebar-link {
+    color: #022222;
+    font-family: @font-primary;
+    font-size: 16px;
+    .transition;
+    line-height: 23px;
+    display: block;
     
+    &:hover {
+      color: @link-color;
+    }
+    
+    &:nth-child(n+2) {
+      margin-top: 22px;
+    }
   }
 }
