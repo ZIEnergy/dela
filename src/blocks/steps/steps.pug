@@ -1,9 +1,9 @@
 mixin steps(additionalClass)
-  .steps.section
+  .steps.section(class=additionalClass, data-anchor="steps")
     .header-common
       h2.header-common__title С нами вы экономите на услугах до 70%
       p.header-common__comment Найдите исполнителя за несколько минут
     +steps-list('steps__steps-list')
     a.button.steps__button(href="#") Создать задание прямо сейчас
-    +scroll-arrow('Как работает сервис')
+    +scroll-arrow('Как работает сервис', 'advantages')
     +scroll-progress

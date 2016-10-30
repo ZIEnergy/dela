@@ -1,2 +1,4 @@
-mixin balloon(additionalClass)
-  .balloon(class=additionalClass)
+mixin balloon(picture, content, additionalClass, additionalClass2)
+  .balloon(class=additionalClass, class=additionalClass2)
+      img.balloon__photo(src="img/" + picture, width="74", height="74")
+      .balloon__content #{content}

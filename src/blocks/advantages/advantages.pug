@@ -1,7 +1,7 @@
 mixin advantages(additionalClass)
-  .advantages.section(class=additionalClass)
+  .advantages.section(class=additionalClass, data-anchor="advantages")
     .header-common.header-common--white
       h2.header-common__title Основные преимущества
       p.header-common__comment Не теряем качества!
     +advantages-list('advantages__advantages-list')
-    +scroll-arrow('Что заказывают?')
+    +scroll-arrow('Что заказывают?', 'live')

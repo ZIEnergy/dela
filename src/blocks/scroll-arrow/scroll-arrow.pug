@@ -1,2 +1,2 @@
-mixin scroll-arrow(content, additionalClass)
-  a.scroll-arrow(class=additionalClass, href="#") #{content}
+mixin scroll-arrow(content, anchor, additionalClass)
+  a.scroll-arrow.anchor(class=additionalClass, href='#'+anchor) #{content}

@@ -1,7 +1,7 @@
 mixin categories(additionalClass)
-  .categories.section(class=additionalClass)
+  .categories.section(class=additionalClass, data-anchor="categories")
     .wrapper
       .header-common
         h2.header-common__title Задания на любой случай жизни
       +categories-list('categories__categories-list')
-    +scroll-arrow('Узнайте больше')
+    +scroll-arrow('Узнайте больше', 'more')

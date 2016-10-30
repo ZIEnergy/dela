@@ -11,6 +11,7 @@ $(document).ready(function(){
 
 
 
+var mapContainer=document.getElementById("map"),myOptions={center:new google.maps.LatLng(54.9981168,82.9066994),zoom:14,mapTypeId:google.maps.MapTypeId.ROADMAP,disableDefaultUI:!0},map=new google.maps.Map(mapContainer,myOptions);
 
 
 
@@ -24,5 +25,4 @@ $(document).ready(function(){
 
 
 
-
-$(".main").fullpage({fixedElements:".header",verticalCentered:!1});})
+$(".main").fullpage({verticalCentered:!1,animateAnchor:!0,navigation:!0,navigationTooltips:["Первый шаг","Как работает","Преимущества","Что заказывают?","Категории","Узнать больше"],onLeave:function(n,a,e){1==n&&"down"==e&&$("#fp-nav").fadeIn("slow"),1==a&&$("#fp-nav").hide()}});})

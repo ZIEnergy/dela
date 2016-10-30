@@ -1,7 +1,13 @@
 mixin front(additionalClass)
-  .front.section(class=additionalClass)
+  .front.section(class=additionalClass, data-anchor="front")
     .front__city.front__city--left
+      +balloon('user-1.png', 'Трезвый водитель', 'front__balloon', 'front__balloon--first')
+      +balloon('user-5.png', 'Получить товар', 'front__balloon', 'front__balloon--second')
+      +balloon('user-6.png', 'Нужно собрать шкаф', 'front__balloon', 'front__balloon--third')
     .front__city.front__city--right
+      +balloon('user-4.png', 'Готов к делу', 'front__balloon', 'front__balloon--fourth')
+      +balloon('user-2.png', 'Я готова взяться', 'front__balloon', 'front__balloon--fifth')
+      +balloon('user-3.png', 'Все сделаю', 'front__balloon', 'front__balloon--sixth')
     .front__content
       .header-common
         h2.header-common__title Удобный способ заказать любую услугу
@@ -9,4 +15,4 @@ mixin front(additionalClass)
       +categories-front('front__categories-front')
       a.button.front__button(href="#") Разместите задание — это бесплатно!
       a.front__executor-link(href="#") Или стать исполнителем и заработать денег
-      +scroll-arrow('Как работает сервис')
+      +scroll-arrow('Как работает сервис', 'steps')
