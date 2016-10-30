@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
 
-var mapContainer=document.getElementById("map"),myOptions={center:new google.maps.LatLng(54.9981168,82.9066994),zoom:14,mapTypeId:google.maps.MapTypeId.ROADMAP,disableDefaultUI:!0},map=new google.maps.Map(mapContainer,myOptions);
+var mapContainer=document.getElementById("map"),myOptions={center:new google.maps.LatLng(54.9984614,82.9218046),zoom:14,mapTypeId:google.maps.MapTypeId.ROADMAP,disableDefaultUI:!0},map=new google.maps.Map(mapContainer,myOptions);
 
 
 
