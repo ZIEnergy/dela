@@ -1,3 +1,39 @@
 .short-info {
+  display: flex;
+  align-items: center;
   
+  &__item {
+    display: flex;
+    align-items: center;
+    
+    &:nth-child(n+2) {
+      margin-left: 30px;
+    }
+    
+    &--city {
+      
+      &:before {
+        content: '';
+        display: block;
+        margin-right: 7px;
+        background: url(../img/icon-balloon.svg) no-repeat;
+        background-size: cover;
+        width: 10px;
+        height: 13px;
+      }
+    }
+    
+    &--experience {
+      
+      &:before {
+        content: '';
+        display: block;
+        margin-right: 7px;
+        background: url(../img/icon-bag.svg) no-repeat;
+        background-size: cover;
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
 }

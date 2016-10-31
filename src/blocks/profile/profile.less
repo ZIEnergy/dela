@@ -1,45 +1,99 @@
 .profile {
+  margin-top: 64px;
+  margin-bottom: 115px;
   
   &__top {
-    
+    position: relative;
   }
   
   &__top-left {
-    
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  &__short-info {
+    margin-top: 55px;
+  }
+  
+  &__top-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   &__top-right {
-    
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   
   &__achievments {
-    
+    display: flex;
+    align-items: center;
   }
   
   &__achievments-message {
-    
+    color: @color-success;
+    font-family: @font-primary;
+    font-size: 16px;
   }
   
   &__achievments-icon {
     
     &--shield {
-      
+      background: url(../img/icon-verification.svg) no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 23px;
+      margin-left: 14px;
     }
     
     &--phone {
-      
+      background: url(../img/icon-phone.svg) no-repeat;
+      background-size: cover;
+      width: 24px;
+      height: 23px;
+      margin-left: 14px;
     }
   }
   
   &__tasks-number {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
     
+    &:before {
+      content: '';
+      display: block;
+      margin-right: 11px;
+      background: url(../img/icon-tasks.svg) no-repeat;
+      background-size: cover;
+      width: 10px;
+      height: 13px;
+    }
   }
   
   &__name {
-    
+    color: #153f78;
+    font-family: @font-primary;
+    font-size: 35px;
+    font-weight: 700;
   }
   
   &__employment {
+    margin-top: 11px;
+    width: 55px;
+    height: 14px;
+    background: @color-success;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-size: 11px;
+    font-family: @font-primary;
     
     &--free {
       
@@ -47,22 +101,52 @@
   }
   
   &__controls {
-    
+    margin-top: 97px;
+    display: flex;
   }
   
   &__controls-item {
+   height: 174px;
     
     &--left {
-      
+      width: 400px;
+      background-color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     &--center {
-      
+      width: 380px;
+      background: #f1f1f1;
+      position: relative;
     }
     
     &--right {
-      
+      width: 400px;
+      background-color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
     }
+  }
+  
+  &__top-button {
+    height: 38px;
+    border-radius: 19px;
+    line-height: 32px;
+    font-size: 18px;
+    width: 268px;
+  }
+  
+  &__top-button {
+    height: 38px;
+    border-radius: 19px;
+    line-height: 32px;
+    font-size: 18px;
+    width: 268px;
   }
   
   &__avatar {
@@ -90,7 +174,13 @@
   }
   
   &__favorite-message {
-    
+    color: #8b8b8b;
+    font-family: @font-primary;
+    font-size: 16px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 32px;
   }
   
   &__content {
