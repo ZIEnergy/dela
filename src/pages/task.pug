@@ -87,10 +87,10 @@ html(lang='en')
                   input.input.form__budget-new-input(type="text", required)
               +checkbox-item-documents('documents', 'Исполнитель должен иметь документы для оформления расписки.', 'Посмотреть пример расписки')
             .form__settings
-              +checkbox-item('documents', 'Получать email-уведомления о новых предложениях', 'form__settings-checkbox')
-              +checkbox-item('documents', 'В стоимость задания входят услуги погрузки/разгрузки', 'form__settings-checkbox')
-              +checkbox-item-info('documents', 'Показывать мое задание только исполнителям.', 'form__settings-checkbox')
-              +checkbox-item('documents', 'Отключить комментарии у задания', 'form__settings-checkbox')
+              +checkbox-item('notifications', 'Получать email-уведомления о новых предложениях', 'form__settings-checkbox')
+              +checkbox-item('cargo', 'В стоимость задания входят услуги погрузки/разгрузки', 'form__settings-checkbox')
+              +checkbox-item-info('executors', 'Показывать мое задание только исполнителям.', 'form__settings-checkbox')
+              +checkbox-item('comments', 'Отключить комментарии у задания', 'form__settings-checkbox')
             .form__error-message Не все поля заполнены! Проверьте правильность введенных данных
             button.button.form__button Опубликовать задание
           .form__sidebar
