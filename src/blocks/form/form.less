@@ -2,18 +2,28 @@
   display: flex;
   
   &__content {
-    
+    padding: 60px 57px 45px 80px;
+    background: #f7f7f7;
   }
   
   &__main {
-    
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #e2e2e2;
   }
   
   &__item {
     
+    &:nth-child(n+2) {
+      margin-top: 35px;
+    }
   }
   
   &__item-header {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+    margin-bottom: 8px;
     
     &--error {
       
@@ -22,18 +32,80 @@
   
   &__item-content {
     
+    &--justify {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  &__category-select {
+    width: 298px;
+  }
+  
+  &__category-select-inner{
+    width: 282px;
   }
   
   &__dscr {
-    
+    position: relative;
   }
   
   &__private-message {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 22px;
+    left: 26px;
     
+    &:before {
+      content: '';
+      display: block;
+      background: url(../img/icon-lock.svg) no-repeat;
+      background-size: cover;
+      width: 14px;
+      height: 17px;
+      margin-right: 14px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  
+  &__private-message-content {
+    border-bottom: 1px dotted #222;
   }
   
   &__attachments {
-    
+    margin-top: 24px;
+  }
+  
+  &__attachments-clear {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__attachments-button-upload {
+    width: 173px;
+    height: 41px;
+    line-height: 37px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: 27px;
+    flex: 0 0 auto;
+  }
+  
+  &__attachments-text {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+  }
+  
+  &__attachments-uploaded {
+    display: none;
   }
   
   &__attachment {
@@ -59,16 +131,18 @@
     
   }
   
-  &__attachment-button {
+  &__attachment-button-more {
     
   }
   
   &__details {
-    
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #e2e2e2;
   }
   
   &__size {
-    
+    display: none;
   }
   
   &__error-cause {
@@ -79,11 +153,42 @@
   }
   
   &__weight {
-    
+    display: flex;
   }
   
   &__weight-item {
+    padding: 0 27px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    color: #222;
+    line-height: 38px;
+    font-family: @font-primary;
+    font-size: 16px;
+    text-decoration: none;
     
+    &:first-child {
+      border-radius: 20px 0 0 20px;
+      border-right: 0;
+    }
+    
+    &:last-child {
+      border-radius: 0 20px 20px 0;
+      border-left: 0;
+    }
+    
+    &--active {
+      background: @link-color;
+      color: #fff;
+    }
+  }
+  
+  &__date-action {
+    width: 178px;
+  }
+  
+  &__date-input {
+    margin-left: 20px;
   }
   
   &__address {
@@ -96,6 +201,9 @@
   
   &__address-container {
     
+    &--new {
+      display: none;
+    }
   }
   
   &__address-remove {
@@ -103,19 +211,40 @@
   }
   
   &__address-more {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 22px;
     
+    &:before {
+      content: '';
+      display: block;
+      background: url(../img/add-green.svg) no-repeat;
+      background-size: cover;
+      width: 13px;
+      height: 13px;
+      margin-right: 9px;
+      margin-bottom: 1px;
+    }
+  }
+  
+  &__address-more-content {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
   }
   
   &__budget {
-    
-  }
-  
-  &__budget {
-    
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #e2e2e2;
   }
   
   &__budget-header {
-    
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 700;
   }
   
   &__slider {
@@ -123,21 +252,46 @@
   }
   
   &__budget-new {
-    
+    display: flex;
+    align-items: center;
   }
   
   &__budget-new-header {
-    
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+  }
+  
+  &__budget-new-input-wrapper {
+    position: relative;
+    width: 101px;
+    margin-left: 20px;
+     
+    &:after {
+      content: 'руб.';
+      display: block;
+      position: absolute;
+      right: 11px;
+      top: 14px;
+      color: #222;
+      font-family: @font-primary;
+      font-size: 16px;
+    }
   }
   
   &__budget-new-input {
-    
+    padding-right: 40px;
   }
   
   &__settings {
     
   }
-  
+  &__settings__checkbox {
+    
+    &:nth-child(n+2) {
+      margin-top: 22px;
+    }
+  }
   &__error-message {
     
   }
@@ -148,6 +302,7 @@
   
   &__sidebar {
     width: 37.54%;
+    flex: 0 0 auto;
     padding: 44px 55px 50px 63px;
     background: #f1f1f1;
     border-radius: 0 10px 10px 0;

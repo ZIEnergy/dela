@@ -32,4 +32,5 @@ var mapContainer=document.getElementById("map"),myOptions={center:new google.map
 
 
 
+
 $(".main").fullpage({verticalCentered:!1,animateAnchor:!0,navigation:!0,navigationTooltips:["Первый шаг","Как работает","Преимущества","Что заказывают?","Категории","Узнать больше"],onLeave:function(n,a,e){1==n&&"down"==e&&$("#fp-nav").fadeIn("slow"),1==a&&$("#fp-nav").hide()}});})

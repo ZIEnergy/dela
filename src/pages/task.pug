@@ -6,91 +6,98 @@ html(lang='en')
   body
     +header
     .wrapper
-      .header-common
-        h1.header-common__title Верификация
-        a.header-common__link-back(href="#") ← Перейти на главную
-      form.form(action="#" method='post')
-        .form__content
-          .form__main
-            .form__item
-              .form__item-header Выберете категорию
-              .form__item-content
-                select.select(required)
-                  option(disabled, selected) Курьерские услуги
-                select.select(required)
-                  option(disabled, selected) Доставка еды из ресторанов
-            .form__item
-              .form__item-header Мне нужно
-              input.input(type="text", required)
-            .form__item.form__dscr
-              .form__item-header Опишите пожелания и детали, чтобы исполнители лучше оценили вашу задачу
-              textarea.input.input--textarea(required)
-              .form__private-message Добавить приватную информацию
-            .form__item.form__attachments
-              .form__attachment
-                .form__attachment-content.form__attachment-content--picture
-                .form__attachment-title sdg...jpg
-                a.form__attachment-remove(href="#")
-              .form__attachment.form__attachment
-                .form__attachment-content.form__attachment-content--document
-                .form__attachment-title d54fg.txt
-                a.form__attachment-remove(href="#")
-              a.button.form__attachment-button(href="#") Загрузить еще файл
-          .form__details
-            +checkbox-item('size', 'Указать размеры посылки (м)', 'checkbox-item--active')
-            .form__size
+      .task
+        .header-common
+          h1.header-common__title Добавить задание
+          a.header-common__link-back(href="#") ← Перейти на главную
+        form.form(action="#" method='post')
+          .form__content
+            .form__main
               .form__item
-                .form__error-cause.form__error-cause--left Вы не указали длину
-                .form__item-header.form__item-header--error Длина
-                input.input.input--error(type="text", required)
+                .form__item-header Выберите категорию
+                .form__item-content.form__item-content--justify
+                  select.select.form__category-select(required)
+                    option(disabled, selected) Курьерские услуги
+                  select.select.form__category-select.form__category-select-inner(required)
+                    option(disabled, selected) Доставка еды из ресторанов
               .form__item
-                .form__item-header Ширина
+                .form__item-header Мне нужно
                 input.input(type="text", required)
+              .form__item.form__dscr
+                .form__item-header Опишите пожелания и детали, чтобы исполнители лучше оценили вашу задачу
+                textarea.input.input--textarea(required)
+                a.form__private-message(href="#") 
+                  .form__private-message-content Добавить приватную информацию
+              .form__item.form__attachments
+                .form__attachments-clear
+                  a.button.form__attachments-button-upload(href="#") Загрузить файл
+                  p.form__attachments-text Наличие фото помогает исполнителям лучше оценить вашу задачу и сформулировать свое предложение.
+                .form__attachments-uploaded
+                  .form__attachment
+                    .form__attachment-content.form__attachment-content--picture
+                    .form__attachment-title sdg...jpg
+                    a.form__attachment-remove(href="#")
+                  .form__attachment.form__attachment
+                    .form__attachment-content.form__attachment-content--document
+                    .form__attachment-title d54fg.txt
+                    a.form__attachment-remove(href="#")
+                  a.button.form__attachment-button-more(href="#") Загрузить еще файл
+            .form__details
+              +checkbox-item('size', 'Указать размеры посылки (м)', 'checkbox-item--active')
+              .form__size
+                .form__item
+                  .form__error-cause.form__error-cause--left Вы не указали длину
+                  .form__item-header.form__item-header--error Длина
+                  input.input.input--error(type="text", required)
+                .form__item
+                  .form__item-header Ширина
+                  input.input(type="text", required)
+                .form__item
+                  .form__item-header Высота
+                  input.input(type="text", required)
               .form__item
-                .form__item-header Высота
-                input.input(type="text", required)
-            .form__item
-              .form__item-header Вес посылки
-              .form__item-content.form__weight
-                a.form__weight-item(href="#") До 3 кг
-                a.form__weight-item(href="#") От 3 до 10 кг
-                a.form__weight-item(href="#") Более 10 кг
-            .form__item
-              .form__item-header Дата и время
-              .form__item-content
-                select.select
-                  option(disabled, selected) Начать работу
-                input.input--transparent.input--date(type="text", required, placeholder="Дата")
-                input.input--transparent.input--time(type="text", required, placeholder="Время")
-            .form__item.form__address
-              .form__item-header Адрес
-              .form__item-content.form__address-content
-                .form__address-container
-                  input.input(type="text", required, placeholder="Улица, дом, строение, корпус")
-                .form__address-container
-                  input.input(type="text", required, placeholder="Улица, дом, строение, корпус")
-                  a.form__address-remove(href="#")
-                a.form__address-more(href="#")
-          .form__budget
-            .form__budget-header На какой бюджет вы рассчитываете
-            .form__slider
-            .form__budget-new
-              span.form__budget-new-header Или укажите другую сумму
-              .form__budget-new-input
-                input.input(type="text", required)
-            +checkbox-item-documents('documents', 'Исполнитель должен иметь документы для оформления расписки.', 'Посмотреть пример расписки')
-          .form__settings
-            +checkbox-item('documents', 'Исполнитель должен иметь документы для оформления расписки.')
-            +checkbox-item('documents', 'Исполнитель должен иметь документы для оформления расписки.')
-            +checkbox-item-info('documents', 'Исполнитель должен иметь документы для оформления расписки.')
-            +checkbox-item('documents', 'Исполнитель должен иметь документы для оформления расписки.')
-          .form__error-message Не все поля заполнены! Проверьте правильность введенных данных
-          button.button.form__button Опубликовать задание
-        .form__sidebar
-          h2.form__sidebar-header Частые вопросы
-          .form__sidebar-list
-            a.form__sidebar-link(href="#") Сколько предложений я получу?
-            a.form__sidebar-link(href="#") Обязательно выбирать исполнителя?
-            a.form__sidebar-link(href="#") Зачем мне указывать примерный бюджет задания
+                .form__item-header Вес посылки
+                .form__item-content.form__weight
+                  a.form__weight-item.form__weight-item--active(href="#") До 3 кг
+                  a.form__weight-item(href="#") От 3 до 10 кг
+                  a.form__weight-item(href="#") Более 10 кг
+              .form__item
+                .form__item-header Дата и время
+                .form__item-content
+                  select.select.form__date-action
+                    option(disabled, selected) Начать работу
+                  input.input.input--date.form__date-input(type="text", required, placeholder="Дата")
+                  input.input.input--time.form__date-input(type="text", required, placeholder="Время")
+              .form__item.form__address
+                .form__item-header Адрес
+                .form__item-content.form__address-content
+                  .form__address-container
+                    input.input(type="text", required, placeholder="Улица, дом, строение, корпус")
+                  .form__address-container.form__address-container--new
+                    input.input(type="text", required, placeholder="Улица, дом, строение, корпус")
+                    a.form__address-remove(href="#")
+                  a.form__address-more(href="#") 
+                    .form__address-more-content Добавить еще адрес
+            .form__budget
+              .form__budget-header На какой бюджет вы рассчитываете
+              .form__slider
+              .form__budget-new
+                span.form__budget-new-header Или укажите другую сумму
+                .form__budget-new-input-wrapper
+                  input.input.form__budget-new-input(type="text", required)
+              +checkbox-item-documents('documents', 'Исполнитель должен иметь документы для оформления расписки.', 'Посмотреть пример расписки')
+            .form__settings
+              +checkbox-item('documents', 'Получать email-уведомления о новых предложениях', 'form__settings-checkbox')
+              +checkbox-item('documents', 'В стоимость задания входят услуги погрузки/разгрузки', 'form__settings-checkbox')
+              +checkbox-item-info('documents', 'Показывать мое задание только исполнителям.', 'form__settings-checkbox')
+              +checkbox-item('documents', 'Отключить комментарии у задания', 'form__settings-checkbox')
+            .form__error-message Не все поля заполнены! Проверьте правильность введенных данных
+            button.button.form__button Опубликовать задание
+          .form__sidebar
+            h2.form__sidebar-header Частые вопросы
+            .form__sidebar-list
+              a.form__sidebar-link(href="#") Сколько предложений я получу?
+              a.form__sidebar-link(href="#") Обязательно выбирать исполнителя?
+              a.form__sidebar-link(href="#") Зачем мне указывать примерный бюджет задания
     +footer
     include ../templates/scripts.pug

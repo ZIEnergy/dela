@@ -1,3 +1,36 @@
 .input {
+  background: #fff;
+  height: 42px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 3px 0 #e5e5e5;
+  border-radius: 3px;
+  padding-left: 18px;
+  color: #222;
+  font-family: @font-primary;
+  font-size: 16px;
+  width: 100%;
+  .transition;
   
+  &:focus {
+    border: 1px solid #177fde;
+    box-shadow: 0 2px 0 #177fde;
+  }
+  
+  &--textarea {
+    resize: none;
+    height: 240px;
+    padding: 18px;
+  }
+  
+  &--date {
+    width: 135px;
+    background: #fff url(../img/calendar-icon.svg) no-repeat right 14px top 11px;
+    background-size: 18px 18px;
+  }
+  
+  &--time {
+    width: 135px;
+    background: #fff url(../img/time-icon.svg) no-repeat right 14px top 11px;
+    background-size: 18px 18px;
+  }
 }
