@@ -26,7 +26,7 @@ html(lang='en')
               a.button.button--message.profile__top-button(href="#") Написать сообщение
             .profile__controls-item.profile__controls-item--center
               .profile__avatar
-                img.profile__avatar-photo(src="img/profile-photo.png" alt="Photo")
+                img.profile__avatar-photo(src="img/avatar.png" alt="Photo")
                 .profile__status
               a.button.profile__offer(href="#") Предложить задание
               p.profile__price-header Цена за час работы
@@ -37,7 +37,7 @@ html(lang='en')
         .profile__content
           .profile__content-left
             .profile__about
-              h2.profile__content-header Обо мне
+              h2.content-header Обо мне
               .profile__about-content
                 p.profile__about-item.text-common Колледж декоративно прикладного искусства с 2007 года. <br>Институт современного искусства с 2011 года <br>Университет Синергия 2015 года <br>Работа во фрилансе с 2005 года. <br>Быстрая качественная работа, в сроки. 
                 p.profile__about-item.text-common Качества: художественный вкус, фантазия, талант,трудолюбие и усидчивость. Обладаю творческим подходом к решению поставленных задач, образным, креативным мышлением, умением представить проектируемый продукт в завершенном виде. А так же и такие свойства  как коммуникабельность, умение услышать и понять заказчика. 
@@ -45,39 +45,39 @@ html(lang='en')
                 p.profile__about-item.text-common Навыки: Рисунок от руки, на планшете. Живопись: масляная, декоративная, гуашь,акварель, пастель. Фотография: ретушь, отрисовка, цветокоррекция, восстановление фотографий.
                 p.profile__about-item.text-common Конструкторы сайтов: wix, bitrix,  и другие. <br>Языки программирования: HTML, Java, Сss...
             .profile__skills
-              h2.profile__content-header Виды выполняемых работ
+              h2.content-header Виды выполняемых работ
               ul.profile__skills-list
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--design
                   .profile__skill-content 
                     .profile__skill-header Дизайн
-                    .profile__skill-text Логотипы, фирменный стиль, Листовки, буклеты, визитки,  Иллюстрации, иконки, арт,  Дизайн сайтов, Баннеры, оформление соц. сетей,  3d-графика, анимация,  Инфографика, презентации, Наружная реклама, вывески,  Дизайн интерьеров и архитектура,  Что-то другое
+                    .profile__skill-text.text-common Логотипы, фирменный стиль, Листовки, буклеты, визитки,  Иллюстрации, иконки, арт,  Дизайн сайтов, Баннеры, оформление соц. сетей,  3d-графика, анимация,  Инфографика, презентации, Наружная реклама, вывески,  Дизайн интерьеров и архитектура,  Что-то другое
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--photo
                   .profile__skill-content 
                     .profile__skill-header Фото- и видео-услуги
-                    .profile__skill-text Ретушь фотографий,  Создание видеороликов под ключ,  Монтаж и цветокоррекция видео
+                    .profile__skill-text.text-common Ретушь фотографий,  Создание видеороликов под ключ,  Монтаж и цветокоррекция видео
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--assistant
                   .profile__skill-content 
-                    .profile__skill-header Ретушь фотографий,  Создание видеороликов под ключ,  Монтаж и цветокоррекция видео
-                    .profile__skill-text Поиск и обработка информации,  Реклама и продвижение в интернете,  Обзвон по базе
+                    .profile__skill-header Виртуальный помощник
+                    .profile__skill-text.text-common Поиск и обработка информации,  Реклама и продвижение в интернете,  Обзвон по базе
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--web
                   .profile__skill-content 
                     .profile__skill-header Web-разработка
-                    .profile__skill-text Программирование,  Верстка
+                    .profile__skill-text.text-common Программирование,  Верстка
             .profile__portfolio
-              h2.profile__content-header Примеры работ
+              h2.content-header Примеры работ
               .profile__portfolio-list
-                +portfolio-item
-                +portfolio-item
-                +portfolio-item
-                +portfolio-item
+                +portfolio-category('portfolio-1.jpg', 'Сайты', '12')
+                +portfolio-category('portfolio-2.jpg', 'CG', '7')
+                +portfolio-category('portfolio-3.jpg', 'Презентации', '2')
+                +portfolio-category('portfolio-4.jpg', 'LP', '9')
           .profile__content-right
             +rating
-            +contacts
-            +favorite
+            +contacts('profile__contacts')
+            +favorite('profile__favorite')
       +feedback
     +footer
     include ../templates/scripts.pug

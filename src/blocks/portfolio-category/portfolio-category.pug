@@ -1,0 +1,6 @@
+mixin portfolio-category(picture, title, number, additionalClass)
+  a.portfolio-category(href="#", class=additionalClass)
+    img.portfolio-category__picture(src="img/"+picture, alt="Portfolio")
+    .portfolio-category__content
+      .portfolio-category__title #{title}
+      .portfolio-category__number #{number}

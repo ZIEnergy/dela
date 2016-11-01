@@ -1,2 +1,35 @@
 mixin rating(additionalClass)
   .rating(class=additionalClass)
+    .rating__top
+      .rating__left
+        h2.content-header.rating__header Рейтинг
+        .rating__info
+      .rating__right
+        .rating__overall 18
+    .rating__content
+      .rating__item
+        .rating__left
+          p.rating__item-title Качество
+        .rating__right
+          +stars('full', 'full', 'full', 'full', 'empty')
+      .rating__item
+        .rating__left
+          p.rating__item-title Вежливость
+        .rating__right
+          +stars('full', 'full', 'empty', 'empty', 'empty')
+      .rating__item
+        .rating__left
+          p.rating__item-title Цена
+        .rating__right
+          +stars('full', 'full', 'full', 'full', 'empty')
+      .rating__item
+        .rating__left
+          p.rating__item-title Пунктуальность
+        .rating__right
+          +stars('full', 'full', 'full', 'empty', 'empty')
+      .rating__item
+        .rating__left
+          p.rating__item-title Адекватность
+        .rating__right
+          +stars('full', 'full', 'full', 'full', 'full')
+    

@@ -1,3 +1,53 @@
 .rating {
   
+  &__top {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  &__left {
+    display: flex;
+    width: 160px;
+    padding-right: 30px;
+    align-items: center;
+  }
+  
+  &__right {
+    
+  }
+  
+  &__header {
+    margin-bottom: 0;
+  }
+  
+  &__info {
+    background: url(../img/icon-info.svg) no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  
+  &__overall {
+    font-size: 25px;
+    font-family: @font-primary;
+    font-weight: 700;
+    color: @color-gold;
+  }
+  
+  &__item {
+    display: flex;
+    
+    &:nth-child(n+2) {
+      margin-top: 24px;
+    }
+  }
+  
+  &__item-title {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 700;
+  }
 }

@@ -1,3 +1,70 @@
 .contacts {
   
+  &__list {
+    position: relative;
+    left: -4px;
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    
+    &:nth-child(n+2) {
+      margin-top: 25px;
+    }
+  }
+  
+  &__item-header {
+    display: flex;
+    align-items: center;
+    width: 160px;
+  }
+  
+  &__icon {
+    width: 27px;
+    height: 17px;
+    
+    &--phone {
+      background: url(../img/contacts-phone.svg) no-repeat;
+      background-size: 17px 17px;
+      background-position: center;
+    }
+    
+    &--mail {
+      background: url(../img/contacts-mail.svg) no-repeat;
+      background-size: 17px 14px;
+      background-position: center;
+    }
+    
+    &--vk {
+      background: url(../img/contacts-vk.svg) no-repeat;
+      background-size: 18px 10px;
+      background-position: center;
+    }
+    
+    &--fb {
+      background: url(../img/contacts-fb.png) no-repeat;
+      background-size: 6px 13px;
+      background-position: center;
+    }
+    
+    &--twitter {
+      background: url(../img/contacts-twitter.png) no-repeat;
+      background-size: 16px 13px;
+      background-position: center;
+    }
+  }
+  
+  &__item-title {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  &__item-content {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 16px;
+  }
 }
