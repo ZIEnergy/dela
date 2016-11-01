@@ -1,3 +1,65 @@
 .feedback {
   
+  &__top {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background: url(../img/feedback-header-bg.svg) no-repeat 42px;
+    background-size: 65px 65px;
+  }
+  
+  &__header {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: @font-primary;
+    color: #153f78;
+  }
+  
+  &__overall {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__overall-item {
+    margin-left: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: @font-primary;
+    
+    &--positive {
+      color: #15cb52;
+    }
+    
+    &--negative {
+      color: #cb1515;
+    }
+  }
+  
+  &__list {
+    margin-top: 50px;
+  }
+  
+  &__refresh {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 78px;
+    
+    &:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 21px;
+      background: url(../img/refresh-icon.svg) no-repeat;
+      background-size: cover;
+      margin-right: 16px;
+    }
+  }
+  
+  &__refresh-content {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 18px;
+    border-bottom: 1px dotted #222;
+  }
 }

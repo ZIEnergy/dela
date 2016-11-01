@@ -1,2 +1,27 @@
-mixin feedback-item(additionalClass)
+mixin feedback-item(evaluation, photo, name, task, content, additionalClass)
   .feedback-item(class=additionalClass)
+    .feedback-item__left
+      img.feedback-item__photo(src="img/" + photo, alt="Photo")
+      .feedback-item__online
+    .feedback-item__right
+      .feedback-item__right-top
+        a.feedback-item__name(href="#") #{name}
+        +event-time('8 сентября 2016 года в 18:47')
+      .feedback-item__task(class="feedback-item__task--" + evaluation) Отзыв о выполнении задания «
+        a.feedback-item__task-link(href="#") #{task}
+        |»
+      .feedback-item__content
+        p.feedback-item__text.text-common #{content}
+        .feedback-item__ratings-list
+          .feedback-item__rating
+            .feedback-item__rating-item
+              .feedback-item__rating-header Цена
+              +stars('full', 'full', 'full', 'full', 'empty', 'feedback-item__rating-stars')
+          .feedback-item__rating
+            .feedback-item__rating-item
+              .feedback-item__rating-header Пунктуальность
+              +stars('full', 'full', 'full', 'empty', 'empty', 'feedback-item__rating-stars')
+          .feedback-item__rating
+            .feedback-item__rating-item
+              .feedback-item__rating-header Адекватность
+              +stars('full', 'full', 'full', 'full', 'full', 'feedback-item__rating-stars')

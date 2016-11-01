@@ -1,2 +1,13 @@
 mixin feedback(additionalClass)
   .feedback(class=additionalClass)
+    .feedback__top
+      .feedback__header Отзывы
+      .feedback__overall
+        .feedback__overall-item.feedback__overall-item--positive +24
+        .feedback__overall-item.feedback__overall-item--negative -1
+    .feedback__list
+      +feedback-item('positive', 'user-1.png', 'Антон П.', 'Нарисовать иллюстрации к инструкции', 'Все было сделано отлично, внесены все правки.')
+      +feedback-item('positive', 'user-2.png', 'Владислав К.', 'Нужно из раста сделать вектор', 'Все в срок как и договаривались, внесли нужные правки, советую к сотрудничеству!')
+      +feedback-item('negative', 'user-3.png', 'Дмитрий', 'Нужно из раста сделать вектор', 'Задание выполнено отлично. Опытный дизайнер, внимательно относящийся к тонкостям задания. Может посоветовать как лучше сделать. Очень доволен работой. Спасибо!')
+    .feedback__refresh 
+      .feedback__refresh-content показать ещё 21 отзыв
