@@ -56,11 +56,23 @@
   &__more {
     text-align: center;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 34px;
     color: @link-color;
     font-size: 18px;
     font-family: @font-primary;
-    text-decoration: underline;
+    position: relative;
+    
+    &:after {
+      content: '';
+      display: block;
+      background: url(../img/arrow-link.png) no-repeat;
+      background-size: cover;
+      width: 12px;
+      height: 11px;
+      margin-left: 5px;
+    }
   }
 }

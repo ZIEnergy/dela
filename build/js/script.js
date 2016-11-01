@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){$(".add-task__button").click(function(){$(".add-task__popup").fadeToggle("fast")});
 
 
 
@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 
 
+$(".modal-link").magnificPopup({type:"inline"}),$(".form-popup__button").click(function(){$.magnificPopup.close()});
 
 
 
@@ -27,6 +28,7 @@ var mapContainer=document.getElementById("map"),myOptions={center:new google.map
 
 
 
+$(".modal-link").magnificPopup({type:"inline"});
 
 
 

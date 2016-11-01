@@ -1,3 +1,59 @@
 mixin add-task(additionalClass)
   .add-task(class=additionalClass)
     a.add-task__button(href="#") Добавить задание
+    .add-task__popup
+      ul.add-task__categories-list
+        li.add-task__category.add-task__category--active
+          a.add-task__category-link(href="#") Курьерские услуги
+          .add-task__category-dropdown
+            .add-task__category-header Курьерские услуги
+            ul.add-task__category-dropdown-content
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Услуги пешего курьера
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Услуги курьера на авто
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Купить и доставить
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Срочная доставка
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Доставка продуктов
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Доставка еды из ресторанов
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Курьер на день
+              li.add-task__category-dropdown-item
+                a.add-task__category-dropdown-link(href="#") Другая посылка
+            .add-task__best
+              a.add-task__best-picture(href="#")
+                img.add-task__best-photo(src="img/user-big.png", alt="Photo")
+                .add-task__best-number 55 100
+              .add-task__best-content
+                .add-task__best-header Лучший исполнитель в категории
+                a.add-task__best-name(href="#") Елена И.
+        li.add-task__category
+          a.add-task__category-link(href="#") Бытовой ремонт
+        li.add-task__category
+          a.add-task__category-link(href="#") Грузоперевозки
+        li.add-task__category
+          a.add-task__category-link(href="#") Уборка и помощь по хозяйству
+        li.add-task__category
+          a.add-task__category-link(href="#") Виртуальный помощник
+        li.add-task__category
+          a.add-task__category-link(href="#") Компьютерная помощь
+        li.add-task__category
+          a.add-task__category-link(href="#") Мероприятия и промо-акции
+        li.add-task__category
+          a.add-task__category-link(href="#") Дизайн
+        li.add-task__category
+          a.add-task__category-link(href="#") Web-разработка
+        li.add-task__category
+          a.add-task__category-link(href="#") Фото- и видео-услуги
+        li.add-task__category
+          a.add-task__category-link(href="#") Установка и ремонт техники
+        li.add-task__category
+          a.add-task__category-link(href="#") Красота и здоровье
+        li.add-task__category
+          a.add-task__category-link(href="#") Ремонт цифровой техники
+        li.add-task__category
+          a.add-task__category-link(href="#") Юридическая помощь

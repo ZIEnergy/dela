@@ -9,7 +9,7 @@ html(lang='en')
       .wrapper.verification__wrapper
         .header-common
           h1.header-common__title Верификация
-        +link-back('← Перейти на главную')
+        +link-back('Перейти на главную')
         .verification__comment Выполнять задания могут только пользователи, которые прошли процедуру верификации. Данная процедура бесплатная, занимает 10–15 минут и состоит из 4 шагов: заполнение личных данных, указания доверенных лиц, выбора интересных вам категорий и прохождение теста на 
           a.verification__comment-link(href="#") знание механики работы сервиса.
         form.verification__form(action="#" method="post")
@@ -42,7 +42,8 @@ html(lang='en')
               +checkbox-item('offer-1', 'Написать в комментариях к заданию, что готов выполнить поручение и оставить свои контактные данные.')
               +checkbox-item('offer-2', 'Внимательно прочитать условия задания и уточнить необходимые вопросы в комментариях. Убедиться, что на счету достаточно средств для публикации своего предложения. Нажать кнопку в задании “Добавить предложение” и подробно описать суть своего предложения')
               +checkbox-item('offer-3', 'Написать заказчику личное сообщение на сайте и предложить сотрудничество.')
-            button.button.verification__button Завершить тестирование
+            button.button.verification__button.modal-link(data-mfp-src="#verification-success") Завершить тестирование
         +form-progress('verification__form-progress')
+        +form-popup
     +footer
     include ../templates/scripts.pug

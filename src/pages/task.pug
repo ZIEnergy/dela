@@ -9,7 +9,7 @@ html(lang='en')
       .task
         .header-common
           h1.header-common__title Добавить задание
-        +link-back('← Перейти на главную')
+        +link-back('Перейти на главную')
         form.form(action="#" method='post')
           .form__content
             .form__main
@@ -18,8 +18,12 @@ html(lang='en')
                 .form__item-content.form__item-content--justify
                   select.select.form__category-select(required)
                     option(disabled, selected) Курьерские услуги
+                    option Курьерские услуги
+                    option Курьерские услуги
                   select.select.form__category-select.form__category-select-inner(required)
                     option(disabled, selected) Доставка еды из ресторанов
+                    option Доставка еды из ресторанов
+                    option Доставка еды из ресторанов
               .form__item
                 .form__item-header Мне нужно
                 input.input(type="text", required)
@@ -45,14 +49,14 @@ html(lang='en')
             .form__details
               +checkbox-item('size', 'Указать размеры посылки (м)', 'checkbox-item--active')
               .form__size
-                .form__item
+                .form__item.form__item-size
                   .form__error-cause.form__error-cause--left Вы не указали длину
                   .form__item-header.form__item-header--error Длина
                   input.input.input--error(type="text", required)
-                .form__item
+                .form__item.form__item-size
                   .form__item-header Ширина
                   input.input(type="text", required)
-                .form__item
+                .form__item.form__item-size
                   .form__item-header Высота
                   input.input(type="text", required)
               .form__item
@@ -66,6 +70,8 @@ html(lang='en')
                 .form__item-content
                   select.select.form__date-action
                     option(disabled, selected) Начать работу
+                    option Начать работу
+                    option Начать работу
                   input.input.input--date.form__date-input(type="text", required, placeholder="Дата")
                   input.input.input--time.form__date-input(type="text", required, placeholder="Время")
               .form__item.form__address

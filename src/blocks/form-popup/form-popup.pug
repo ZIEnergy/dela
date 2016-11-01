@@ -1,0 +1,16 @@
+mixin form-popup(additionalClass)
+  .form-popup#verification-success.mfp-hide(class=additionalClass)
+    h2.form-popup__header Поздравляем! <br>Вы успешно прошли тест
+    .form-popup__content
+      p.form-popup__content-item Ваша заявка на получение статуса исполнителя отправлена на рассмотрение и будет рассмотрена до 14 сентября 2016 г.
+      p.form-popup__content-item Наши операторы свяжутся с вами и вашими доверенными лицами для подтверждения информации.
+    a.button.button--white.form-popup__button Отлично! Буду ждать.
+    
+    
+mixin form-popup-task(icon, header, content, button, additionalClass)
+  .form-popup.mfp-hide(class=additionalClass)
+    .form-popup__icon(class="form-popup__icon--" + icon)
+    h2.form-popup__header #{header}
+    .form-popup__content
+      p.form-popup__content-item #{content}
+    a.button.button--white.form-popup__button #{button}

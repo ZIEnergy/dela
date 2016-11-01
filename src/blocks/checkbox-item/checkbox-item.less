@@ -32,4 +32,18 @@
     position: relative;
     top: 4px;
   }
+  
+  &--active {
+    
+    .checkbox-item__label {
+      color: @link-color;
+    }
+    
+    .checkbox__hidden:checked + .checkbox__fake {
+      border: 1px solid #177fde;
+      box-shadow: 0 2px 0 #177fde;
+      background: #fff url(../img/check-blue.svg) no-repeat center;
+      background-size: 9px 6px;
+    }
+  }
 }
