@@ -57,6 +57,7 @@
   height: 6px;
   width: 6px;
   background-color: #a6b5c5;
+  .transition;
 }
 
 #fp-nav ul li .fp-tooltip {
@@ -66,9 +67,26 @@
   font-size: 18px;
   color: #a6b5c5;
   line-height: 17px;
+  .transition;
 }
 
 #fp-nav ul li .fp-tooltip.right {
   right: auto;
   left: 20px;
+}
+
+
+
+#fp-nav {
+  
+  &.fp-nav--white {
+    
+    ul li .fp-tooltip {
+      color: #fff;
+    }
+    
+    ul li a span {
+      background: #fff;
+    }
+  }
 }

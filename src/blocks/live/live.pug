@@ -5,3 +5,11 @@ mixin live(additionalClass)
       .header-common
         h2.header-common__title Прямая трансляция работы сервиса
       +scroll-arrow('Больше возможностей', 'categories')
+      .live__markers
+        +balloon-real('user-1.png', 'Доставить пакет', '430 Р', 'live__balloon')
+        +balloon-real('user-2.png', 'Нужен курьер на две по...', '800 Р', 'live__balloon')
+        +balloon-real('user-3.png', 'Трезвый водитель', '1000 Р', 'live__balloon')
+        +balloon-real('user-4.png', 'Необходимо разобрать...', '700 Р', 'live__balloon')
+        +balloon-real('user-5.png', 'Получить товар по довер...', '1000 Р', 'live__balloon')
+        +balloon-real('user-6.png', 'Доставить пакет 1,5 кг...', '500 Р', 'live__balloon')
+        +balloon-real-performed('user-1.png', 'образцы материалов', '1000 Р', 'live__balloon')
