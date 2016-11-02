@@ -53,7 +53,7 @@
     }
     
     &--phone {
-      background: url(../img/icon-phone.svg) no-repeat;
+      background: url(../img/icon-phone.png) no-repeat;
       background-size: cover;
       width: 24px;
       height: 23px;
@@ -94,6 +94,7 @@
     line-height: 14px;
     font-size: 11px;
     font-family: @font-primary;
+    border-radius: 3px;
     
     &--free {
       
@@ -191,6 +192,8 @@
     font-family: @font-primary;
     font-size: 16px;
     margin-top: 9px;
+    position: absolute;
+    bottom: 31px;
   }
   
   &__price {
@@ -332,8 +335,11 @@
     font-family: @font-primary;
     font-size: 16px;
     font-weight: 700;
-    text-decoration: underline;
     margin-bottom: 8px;
+    
+    &:hover {
+      text-decoration: none;
+    }
   } 
   
   &__skill-text {

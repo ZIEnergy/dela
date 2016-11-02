@@ -1,5 +1,13 @@
 .portfolio-category {
   text-decoration: none;
+  display: block;
+  
+  &:hover {
+    
+    .portfolio-category__title {
+      text-decoration: none;
+    }
+  }
     
   &:nth-child(n+3) {
     margin-top: 20px;
@@ -10,7 +18,8 @@
   }
   
   &__picture {
-    
+    position: relative;
+    top: 3px;
   }
   
   &__content {

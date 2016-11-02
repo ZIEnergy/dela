@@ -79,6 +79,11 @@
   
   &__private-message-content {
     border-bottom: 1px dotted #222;
+    
+    &:hover {
+      border-bottom: 0;
+      padding-bottom: 1px;
+    }
   }
   
   &__attachments {
@@ -153,6 +158,11 @@
     position: absolute;
     top: -9px;
     right: -9px;
+    .transition;
+    
+    &:hover {
+      border-color: darken(#1e629e, 10%);
+    }
   }
   
   &__attachment-button-more {
@@ -243,6 +253,7 @@
     font-family: @font-primary;
     font-size: 16px;
     text-decoration: none;
+    .transition;
     
     &:first-child {
       border-radius: 20px 0 0 20px;
@@ -254,7 +265,7 @@
       border-left: 0;
     }
     
-    &--active {
+    &--active, &:hover {
       background: @link-color;
       color: #fff;
     }
@@ -315,7 +326,7 @@
   &__address-remove {
     background: url(../img/close-grey-circle.svg) no-repeat;
     background-size: cover;
-    width: 21px;
+    width: 22px;
     height: 21px;
     margin-right: 9px;
     margin-left: 16px;

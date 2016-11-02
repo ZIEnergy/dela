@@ -2,7 +2,7 @@ mixin feedback-item(evaluation, photo, name, task, content, additionalClass)
   .feedback-item(class=additionalClass)
     .feedback-item__left
       img.feedback-item__photo(src="img/" + photo, alt="Photo")
-      .feedback-item__online
+      .online.online--small.feedback-item__online
     .feedback-item__right
       .feedback-item__right-top
         a.feedback-item__name(href="#") #{name}

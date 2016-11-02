@@ -7,7 +7,7 @@ html(lang='en')
     +header
     .wrapper
       .profile
-        +link-back('← Назад к списку исполнителей')
+        +link-back('Назад к списку исполнителей')
         .profile__top
           .profile__top-left
             +event-time('Был на сайте 2 ч. 8 мин. назад')
@@ -27,7 +27,7 @@ html(lang='en')
             .profile__controls-item.profile__controls-item--center
               .profile__avatar
                 img.profile__avatar-photo(src="img/avatar.png" alt="Photo")
-                .profile__status
+                .online.profile__status
               a.button.profile__offer.modal-link(href="#", data-mfp-src="#offer") Предложить задание
               p.profile__price-header Цена за час работы
               .profile__price от 600 руб.
@@ -50,22 +50,22 @@ html(lang='en')
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--design
                   .profile__skill-content 
-                    .profile__skill-header Дизайн
+                    a.profile__skill-header(href="#") Дизайн
                     .profile__skill-text.text-common Логотипы, фирменный стиль, Листовки, буклеты, визитки,  Иллюстрации, иконки, арт,  Дизайн сайтов, Баннеры, оформление соц. сетей,  3d-графика, анимация,  Инфографика, презентации, Наружная реклама, вывески,  Дизайн интерьеров и архитектура,  Что-то другое
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--photo
                   .profile__skill-content 
-                    .profile__skill-header Фото- и видео-услуги
+                    a.profile__skill-header(href="#") Фото- и видео-услуги
                     .profile__skill-text.text-common Ретушь фотографий,  Создание видеороликов под ключ,  Монтаж и цветокоррекция видео
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--assistant
                   .profile__skill-content 
-                    .profile__skill-header Виртуальный помощник
+                    a.profile__skill-header(href="#") Виртуальный помощник
                     .profile__skill-text.text-common Поиск и обработка информации,  Реклама и продвижение в интернете,  Обзвон по базе
                 li.profile__skill
                   .profile__skill-icon.profile__skill-icon--web
                   .profile__skill-content 
-                    .profile__skill-header Web-разработка
+                    a.profile__skill-header(href="#") Web-разработка
                     .profile__skill-text.text-common Программирование,  Верстка
             .profile__portfolio
               h2.content-header Примеры работ
