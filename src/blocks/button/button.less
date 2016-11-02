@@ -9,11 +9,22 @@
   color: @link-color;
   text-decoration: none;
   cursor: pointer;
+  .transition;
+  
+  &:hover {
+    background: @link-color;
+    color: #fff;
+  }
   
   &--white {
     color: #fff;
     border-color: #fff;
     background: transparent;
+  
+    &:hover {
+      background: #fff;
+      color: @link-color;
+    }
   }
   
   &--message {

@@ -12,6 +12,13 @@
   bottom: 5.76%;
   width: 100%;
   
+  &:hover {
+    
+    &:before {
+      margin-bottom: 9px;
+    }
+  }
+  
   &:before {
     content: '';
     display: block;
@@ -20,6 +27,7 @@
     background-size: cover;
     width: 43px;
     height: 22px;
+    .transition;
   }
   
   &--white {
