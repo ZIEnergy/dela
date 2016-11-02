@@ -1,0 +1,49 @@
+.slider {
+  width: 100%;
+  height: 84px;
+  background: url(../img/slider-bg.svg) no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  &__line {
+    width: 100%;
+    height: 3px;
+    background: @link-color;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-right: 113px;
+  }
+  
+  &__button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #4099e9 url(../img/slider-button.png) no-repeat center;
+    box-shadow: 0 5px 8px #cfcfcf;
+    position: absolute;
+    left: 85px;
+    bottom: -14px;
+  }
+  
+  &__items-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__item {
+    
+  }
+  
+  &__item-dot {
+    width: 7px;
+    height: 14px;
+    background: @link-color;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  &__item-content {
+    position: absolute;
+  }
+}
