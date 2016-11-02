@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='ru')
   include ../templates/head.pug
   include ../templates/blocks.pug
   
@@ -7,7 +7,7 @@ html(lang='en')
     +header
     .wrapper
       .profile
-        +link-back('Назад к списку исполнителей')
+        +link-back('Назад к списку исполнителей', 'profile__link-back')
         .profile__top
           .profile__top-left
             +event-time('Был на сайте 2 ч. 8 мин. назад')

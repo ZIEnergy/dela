@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='ru')
   include ../templates/head.pug
   include ../templates/blocks.pug
   
@@ -32,7 +32,7 @@ html(lang='en')
                 textarea.input.input--textarea(required)
                 a.form__private-message(href="#") 
                   .form__private-message-content Добавить приватную информацию
-              .form__item.form__attachments
+              .form__attachments
                 .form__attachments-clear
                   a.button.form__attachments-button-upload(href="#") Загрузить файл
                   p.form__attachments-text Наличие фото помогает исполнителям лучше оценить вашу задачу и сформулировать свое предложение.
@@ -59,13 +59,13 @@ html(lang='en')
                 .form__item.form__item-size
                   .form__item-header Высота
                   input.input(type="text", required)
-              .form__item
+              .form__item-weight
                 .form__item-header Вес посылки
                 .form__item-content.form__weight
                   a.form__weight-item.form__weight-item--active(href="#") До 3 кг
                   a.form__weight-item(href="#") От 3 до 10 кг
                   a.form__weight-item(href="#") Более 10 кг
-              .form__item
+              .form__item-time
                 .form__item-header Дата и время
                 .form__item-content
                   select.select.form__date-action
@@ -74,7 +74,7 @@ html(lang='en')
                     option Начать работу
                   input.input.input--date.form__date-input(type="text", required, placeholder="Дата")
                   input.input.input--time.form__date-input(type="text", required, placeholder="Время")
-              .form__item.form__address
+              .form__address
                 .form__item-header Адрес
                 .form__item-content.form__address-content
                   .form__address-container
@@ -91,7 +91,7 @@ html(lang='en')
                 span.form__budget-new-header Или укажите другую сумму
                 .form__budget-new-input-wrapper
                   input.input.form__budget-new-input(type="text", required)
-              +checkbox-item-documents('documents', 'Исполнитель должен иметь документы для оформления расписки.', 'Посмотреть пример расписки')
+              +checkbox-item-documents('documents', 'Исполнитель должен иметь документы для оформления расписки.', 'Посмотреть пример расписки', 'form__checkbox-documents')
             .form__settings
               +checkbox-item('notifications', 'Получать email-уведомления о новых предложениях', 'form__settings-checkbox')
               +checkbox-item('cargo', 'В стоимость задания входят услуги погрузки/разгрузки', 'form__settings-checkbox')

@@ -1,6 +1,6 @@
 mixin balloon(picture, content, additionalClass, additionalClass2)
   .balloon(class=additionalClass, class=additionalClass2)
-    img.balloon__photo(src="img/" + picture, width="74", height="74")
+    img.balloon__photo(src="img/" + picture, width="74", height="74", alt="User")
     .balloon__content 
       .balloon__content-text #{content}
       
@@ -8,14 +8,14 @@ mixin balloon(picture, content, additionalClass, additionalClass2)
     
 mixin balloon-real(picture, content, price, additionalClass)
   .balloon(class=additionalClass)
-    img.balloon__photo(src="img/" + picture, width="74", height="74")
+    img.balloon__photo(src="img/" + picture, width="74", height="74", alt="User")
     .balloon__content.balloon__content--wide
       .balloon__content-text #{content} <br> #{price}
       
       
 mixin balloon-real-performed(picture, content, price, additionalClass)
   .balloon(class=additionalClass)
-    img.balloon__photo(src="img/" + picture, width="74", height="74")
+    img.balloon__photo(src="img/" + picture, width="74", height="74", alt="User")
     .balloon__content.balloon__content--wide
       .balloon__content-text #{content} <br> #{price}
     .balloon__status выполняется

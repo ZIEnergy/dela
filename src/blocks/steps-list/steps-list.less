@@ -7,6 +7,23 @@
     flex-direction: column;
     align-items: center;
     max-width: 255px;
+    position: relative;
+    
+    &:nth-child(n+2) {
+      margin-left: 100px;
+      
+      &:before {
+        content: '';
+        display: block;
+        background: url(../img/arrow-violet.svg) no-repeat;
+        background-size: cover;
+        width: 33px;
+        height: 63px;
+        position: absolute;
+        left: -75px;
+        top: 66px;
+      }
+    }
   }
   
   &__item-icon {

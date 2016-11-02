@@ -1,6 +1,10 @@
 .profile {
-  margin-top: 64px;
+  margin-top: 80px;
   margin-bottom: 115px;
+  
+  &__link-back {
+    margin-bottom: 32px;
+  }
   
   &__top {
     position: relative;
@@ -9,11 +13,11 @@
   &__top-left {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 8px;
   }
   
   &__short-info {
-    margin-top: 55px;
+    margin-top: 47px;
   }
   
   &__top-center {
@@ -29,11 +33,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    top: 8px;
   }
   
   &__achievments {
     display: flex;
-    align-items: center;
   }
   
   &__achievments-message {
@@ -64,7 +68,7 @@
   &__tasks-number {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
     
     &:before {
       content: '';
@@ -85,7 +89,7 @@
   }
   
   &__employment {
-    margin-top: 11px;
+    margin-top: 5px;
     width: 55px;
     height: 14px;
     background: @color-success;
@@ -102,7 +106,7 @@
   }
   
   &__controls {
-    margin-top: 97px;
+    margin-top: 95px;
     display: flex;
   }
   
@@ -115,6 +119,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 10px 0 0 10px;
     }
     
     &--center {
@@ -135,6 +140,7 @@
       justify-content: center;
       flex-direction: column;
       position: relative;
+      border-radius: 0 10px 10px 0;
     }
   }
   
@@ -274,7 +280,7 @@
   &__about-item {
     
     &:nth-child(n+2) {
-      margin-top: 20px;
+      margin-top: 23px;
     }
   }
   
@@ -283,14 +289,14 @@
   }
   
   &__skills-list {
-    
+    margin-top: 24px;
   }
   
   &__skill {
     display: flex;
     
     &:nth-child(n+2) {
-      margin-top: 42px;
+      margin-top: 44px;
     }
   }
   
@@ -347,7 +353,7 @@
   }
   
   &__portfolio {
-    margin-top: 50px;
+    margin-top: 62px;
   }
   
   &__portfolio-list {
@@ -358,7 +364,7 @@
   }
   
   &__contacts {
-    margin-top: 70px;
+    margin-top: 64px;
   }
   
   &__favorite {
