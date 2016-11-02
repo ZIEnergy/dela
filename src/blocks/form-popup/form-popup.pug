@@ -7,8 +7,8 @@ mixin form-popup(additionalClass)
     a.button.button--white.form-popup__button Отлично! Буду ждать.
     
     
-mixin form-popup-task(icon, header, content, button, additionalClass)
-  .form-popup.mfp-hide(class=additionalClass)
+mixin form-popup-task(id, icon, header, content, button, additionalClass)
+  .form-popup.form-popup--task.mfp-hide(class=additionalClass, id=id)
     .form-popup__icon(class="form-popup__icon--" + icon)
     h2.form-popup__header #{header}
     .form-popup__content

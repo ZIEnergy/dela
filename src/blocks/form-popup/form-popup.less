@@ -2,12 +2,38 @@
   max-width: 730px;
   margin: 0 auto;
   
+  &__icon {
+    margin: 0 auto 45px;
+    
+    &--error {
+      width: 73px;
+      height: 65px;
+      background: url(../img/popup-error.svg) no-repat;
+      background-size: cover;
+    }
+    
+    &--info {
+      width: 73px;
+      height: 73px;
+      background: url(../img/popup-info.svg) no-repat;
+      background-size: cover;
+    }
+    
+    &--success {
+      width: 73px;
+      height: 73px;
+      background: url(../img/popup-success.svg) no-repat;
+      background-size: cover;
+    }
+  }
+  
   &__header {
     color: #fff;
     font-family: @font-primary;
     font-size: 35px;
     line-height: 44px;
     text-align: center;
+    font-weight: 700;
   }
   
   &__content {
@@ -33,5 +59,9 @@
     line-height: 53px;
     border-radius: 29px;
     margin: 50px auto 0;
+  }
+  
+  &--task {
+    max-width: 560px;
   }
 }

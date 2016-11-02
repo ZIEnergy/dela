@@ -1,0 +1,15 @@
+mixin offer-popup(additionalClass)
+  form.offer-popup#offer.mfp-hide(class=additionalClass, action="#", method="get")
+    a.offer-popup__close(href="#")
+    h2.offer-popup__header Предложить задание
+    ul.offer-popup__task-list
+      li.offer-popup__task-item
+        .offer-popup__task-header.text-common Транспортировать транспортное средство в МРЭО
+        a.button.offer-popup__task-button(href="#") Предложить
+      li.offer-popup__task-item.offer-popup__task-item--offered
+        .offer-popup__task-header.text-common Нужен мастер, чтобы разобрать кровати
+        a.button.offer-popup__task-button(href="#") Предложить
+      li.offer-popup__task-item
+        .offer-popup__task-header.text-common ХЕМНЭС Тумба прикроватная, белый 3 999.– Цена включает...
+        a.button.offer-popup__task-button(href="#") Предложить
+    button.button.offer-popup__button Отправить

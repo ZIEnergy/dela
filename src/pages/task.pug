@@ -98,12 +98,15 @@ html(lang='en')
               +checkbox-item-info('executors', 'Показывать мое задание только исполнителям.', 'form__settings-checkbox')
               +checkbox-item('comments', 'Отключить комментарии у задания', 'form__settings-checkbox')
             .form__error-message Не все поля заполнены! Проверьте правильность введенных данных
-            button.button.form__button Опубликовать задание
+            button.button.form__button.modal-link(data-mfp-src="#task-success") Опубликовать задание
           .form__sidebar
             h2.form__sidebar-header Частые вопросы
             .form__sidebar-list
               a.form__sidebar-link(href="#") Сколько предложений я получу?
               a.form__sidebar-link(href="#") Обязательно выбирать исполнителя?
               a.form__sidebar-link(href="#") Зачем мне указывать примерный бюджет задания
+        +form-popup-task('task-error', 'error', 'Что-то пошло не так! Ваше задание не создалось.', 'Это могло произойти по сотням различных причин, которые вам будут не интересны. Просто повторите попытку пожалуйста.', 'Повторить')
+        +form-popup-task('task-info', 'info', 'Уведомляем вас, что ваше задание хорошее! Так держать!', 'Оно будет опубликованно после проверки нашими модераторами. Это не займет много времени!', 'Понял')
+        +form-popup-task('task-success', 'success', 'Ваше задание успешно создано!', 'Оно будет опубликованно после проверки нашими модераторами. Это не займет много времени!', 'Хорошо')
     +footer
     include ../templates/scripts.pug

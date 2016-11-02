@@ -28,7 +28,7 @@ html(lang='en')
               .profile__avatar
                 img.profile__avatar-photo(src="img/avatar.png" alt="Photo")
                 .profile__status
-              a.button.profile__offer(href="#") Предложить задание
+              a.button.profile__offer.modal-link(href="#", data-mfp-src="#offer") Предложить задание
               p.profile__price-header Цена за час работы
               .profile__price от 600 руб.
             .profile__controls-item.profile__controls-item--right
@@ -79,5 +79,6 @@ html(lang='en')
             +contacts('profile__contacts')
             +favorite('profile__favorite')
       +feedback('profile__feedback')
+      +offer-popup
     +footer
     include ../templates/scripts.pug

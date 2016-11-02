@@ -1,0 +1,70 @@
+.offer-popup {
+  padding: 37px;
+  background: #fff;
+  width: 705px;
+  margin: 0 auto;
+  position: relative;
+  
+  &__header {
+    color: #222;
+    font-family: @font-primary;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  &__task-list {
+    
+  }
+  
+  &__task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #f4f4f5;
+    
+    &--offered {
+      
+      .offer-popup__task-header {
+        color: #15cb52;
+      }
+      
+      .offer-popup__task-button {
+        border-color: #15cb52;
+        color: transparent;
+        background: url(../img/check-big.svg) no-repeat center;
+        background-size: 19px 12px;
+      }
+    }
+  }
+  
+  &__task-header {
+    
+  }
+  
+  &__task-button {
+    display: block;
+    width: 133px;
+    height: 39px;
+    border-radius: 19px;
+    font-size: 16px;
+    line-height: 33px;
+    text-align: center;
+  }
+  
+  &__button {
+    margin-top: 45px;
+    width: 126px;
+    height: 39px;
+    line-height: 33px;
+    border-radius: 19px;
+    font-size: 16px;
+  }
+  
+  &__close {
+    background: url(../img/close-grey-big.svg) no-repeat;
+    background-size: 21px 21px;
+  }
+}
