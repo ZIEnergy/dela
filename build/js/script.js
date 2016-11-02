@@ -16,7 +16,7 @@ $(document).ready(function(){$(".add-task__button").click(function(){$(".add-tas
 
 
 
-
+$(".form__sidebar-content").sticky({topSpacing:50});
 $(".modal-link").magnificPopup({type:"inline"}),$(".form-popup__button").click(function(){$.magnificPopup.close()});
 
 

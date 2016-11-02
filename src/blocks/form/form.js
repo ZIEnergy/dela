@@ -1,0 +1,1 @@
+$(".form__sidebar-content").sticky({topSpacing:50});
