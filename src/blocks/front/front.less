@@ -26,6 +26,10 @@
       left: 0;
       bottom: 0;
       z-index: 1;
+    
+      @media screen and (max-height: @screen-narrow) {
+        left: -15%;
+      }
     }
     
     &--right {
@@ -36,6 +40,10 @@
       right: 0;
       bottom: 0;
       z-index: 1;
+    
+      @media screen and (max-height: @screen-narrow) {
+        right: -15%;
+      }
     }
   }
   
@@ -64,10 +72,18 @@
     &:hover {
       text-decoration: none;
     }
+    
+    @media screen and (max-height: @screen-narrow) {
+      font-size: 20px;
+    }
   }
   
   &__categories-front {
     margin: 67px 0 58px;
+    
+    @media screen and (max-height: @screen-narrow) {
+      margin: 40px 0;
+    }
   }
   
   &__balloon {

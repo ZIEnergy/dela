@@ -18,6 +18,10 @@
     left: 0;
     bottom: 0;
     z-index: 2;
+    
+    @media screen and (max-height: @screen-narrow) {
+      left: -19%;
+    }
   }
   
   &:after {
@@ -28,6 +32,10 @@
     right: 0;
     top: -190px;
     z-index: 2;
+    
+    @media screen and (max-height: @screen-narrow) {
+      right: -15%;
+    }
   }
   
   &__question {
@@ -66,6 +74,12 @@
     font-size: 35px;
     border-radius: 48px;
     margin: 66px 0 72px;
+    position: relative;
+    z-index: 2;
+    
+    @media screen and (max-height: @screen-narrow) {
+      margin: 40px 0;
+    }
   }
   
   &__executor {

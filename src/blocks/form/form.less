@@ -198,6 +198,7 @@
   &__item-size {
     margin-top: 0;
     width: 180px;
+    position: relative;
     
     &:nth-child(n+2) {
       margin-top: 0;
@@ -235,6 +236,22 @@
         margin-top: -10px;
         border-width: 10px 0 10px 10px;
         border-color: transparent transparent transparent @color-error;
+      }
+    
+      @media screen and (max-height: @screen-narrow) {
+        left: 50%;
+        margin-left: -107px;
+        bottom: -70px;
+      
+        &:after {
+          border-width: 0 10px 10px 10px;
+          right: auto;
+          top: 1px;
+          left: 50%;
+          margin-left: -10px;
+          border-width: 0 10px 10px 10px;
+          border-color: transparent transparent @color-error transparent;
+        }
       }
     }
   }
